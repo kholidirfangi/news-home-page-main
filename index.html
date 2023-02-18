@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="assets/images/logo.svg" alt="" />
+
+      <nav>
+        <div class="icon-close-wrap">
+          <img
+            class="icon-close"
+            src="assets/images/icon-menu-close.svg"
+            alt=""
+          />
+        </div>
+
+        <a class="navlink" href="#">Home</a>
+        <a class="navlink" href="#">New</a>
+        <a class="navlink" href="#">Popular</a>
+        <a class="navlink" href="#">Trending</a>
+        <a class="navlink" href="#">Categories</a>
+      </nav>
+      <div class="icon-menu-wrap">
+        <img class="icon-menu" src="assets/images/icon-menu.svg" alt="" />
+      </div>
+    </header>
+    <div class="container">
+      <section class="main">
+        <picture>
+          <source
+            media="(min-width:500px)"
+            srcset="assets/images/image-web-3-desktop.jpg"
+          />
+          <img
+            src="assets/images/image-web-3-mobile.jpg"
+            alt=""
+            class="hero-section"
+          />
+        </picture>
+        <article>
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div class="wrap">
+            <p>
+              We dive into the next evolution of web the that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button>Read More</button>
+          </div>
+        </article>
+      </section>
+      <section class="side">
+        <h2>New</h2>
+        <div class="news">
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="news">
+          <h3>The Downsides of AI Artistry</h3>
+          <p>
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </div>
+        <div class="news no-divider">
+          <h3>Is VS Funding Drying Up?</h3>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <section class="top-news">
+      <div class="top-news-list">
+        <img src="assets/images/image-retro-pcs.jpg" alt="" />
+        <div class="top-news-list-content">
+          <div class="number">01</div>
+          <h4>Reviving Retro PCs</h4>
+          <p>What happens when old PCs are giving modern upgrades?</p>
+        </div>
+      </div>
+      <div class="top-news-list">
+        <img src="assets/images/image-top-laptops.jpg" alt="" />
+        <div class="top-news-list-content">
+          <div class="number">02</div>
+          <h4>Top 10 Laptops of 2022</h4>
+          <p>Our best pick for various needs and budgets.</p>
+          <p></p>
+        </div>
+      </div>
+      <div class="top-news-list">
+        <img src="assets/images/image-gaming-growth.jpg" alt="" />
+        <div class="top-news-list-content">
+          <div class="number">03</div>
+          <h4>The Growth of Gaming</h4>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      . Coded by
+      <a href="https://www.instagram.com/kholid_irfangi" target="_blank">
+        Kholid Irfangi
+      </a>
+      .
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

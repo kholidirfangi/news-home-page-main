@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  padding: 0 1rem;
+}
+
+header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+header img.logo {
+  width: 50px;
+}
+
+img.icon-menu {
+  width: 40px;
+  cursor: pointer;
+}
+
+.icon-close-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem 1rem 2rem;
+}
+img.icon-close {
+  width: 30px;
+  cursor: pointer;
+  position: relative;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(236, 13%, 42%);
+}
+
+nav a:hover,
+.active {
+  color: hsl(5, 85%, 63%);
+}
+
+section img {
+  width: 100%;
+}
+
+article {
+  padding: 2rem 0;
+}
+
+article h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 2.5rem;
+}
+
+.wrap p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: hsl(240, 100%, 5%);
+  line-height: 1.5rem;
+}
+
+button {
+  width: 11rem;
+  border: none;
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  padding: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 1.5rem 0 3rem 0;
+  font-size: 0.8rem;
+  transition: background 250ms;
+  cursor: pointer;
+}
+
+button:hover {
+  background: black;
+}
+
+section.side {
+  background-color: hsl(240, 100%, 5%);
+  padding: 1.1rem 1.5rem 0 1rem;
+  height: max-content;
+}
+
+section h2 {
+  color: hsl(35, 77%, 62%);
+  margin-bottom: 0.5rem;
+}
+
+.news {
+  padding: 1.5rem 0;
+  border-bottom: 2px solid hsl(236, 13%, 42%);
+}
+
+.news h3 {
+  font-size: 1.18rem;
+  color: hsl(36, 100%, 99%);
+  margin-bottom: 1rem;
+}
+
+.news p {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: hsl(233, 8%, 70%);
+}
+
+.no-divider {
+  border: none;
+}
+
+section.top-news {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 3rem 0;
+}
+
+.top-news-list {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.top-news-list img {
+  width: 30%;
+}
+
+.top-news-list-content {
+  padding-left: 1.5rem;
+}
+
+.top-news-list-content .number {
+  font-size: 2rem;
+  color: hsl(233, 8%, 79%);
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.top-news-list-content h4 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.top-news-list-content p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: hsl(236, 13%, 42%);
+  line-height: 1.5rem;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: hsl(5, 85%, 63%);
+}
+
+/* animation */
+@keyframes open {
+  from {
+    right: -250px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes close {
+  from {
+    right: 0;
+  }
+  to {
+    right: -250px;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav {
+    width: 60%;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: -10px;
+    padding: 1rem;
+    background: hsl(36, 100%, 99%);
+  }
+
+  nav a {
+    display: block;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    padding: 2rem 10rem 10rem 10rem;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  nav a {
+    text-decoration: none;
+    margin-left: 3rem;
+  }
+
+  .icon-menu-wrap {
+    display: none;
+  }
+
+  img.icon-close {
+    display: none;
+  }
+
+  section.main {
+    margin-right: 2rem;
+  }
+
+  article h1 {
+    width: 50%;
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .wrap {
+    width: 50%;
+    padding: 0 1rem 0 2rem;
+  }
+
+  .wrap p {
+    font-size: 1.1rem;
+  }
+  section.side {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  article {
+    display: flex;
+    padding: 1rem 0;
+  }
+
+  .wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+
+  button {
+    margin: 0;
+  }
+
+  section.top-news {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .top-news-list {
+    width: 33.3%;
+  }
+
+  .top-news-list-content p {
+    padding-right: 1.5rem;
+  }
+}
